@@ -1,0 +1,9 @@
+{
+  "name": "Školski Raspored",
+  "short_name": "Raspored",
+  "description": "Raspored nastave JU MSŠ 'Hazim Šabanović' Visoko",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0ea5e9"
+} 
