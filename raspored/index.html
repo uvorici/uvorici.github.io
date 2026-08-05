@@ -2,21 +2,32 @@
 <html lang="bs">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/raspored/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/raspored/mss3-2048x2048.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Školski Raspored</title>
+    <meta name="description" content="Pregled sedmičnih rasporeda profesora i odjeljenja JU MSŠ Hazim Šabanović Visoko." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Školski raspored" />
+    <meta property="og:description" content="Pregled sedmičnih rasporeda profesora i odjeljenja." />
+    <meta property="og:image" content="/raspored/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Školski raspored" />
+    <meta name="twitter:description" content="Pregled sedmičnih rasporeda profesora i odjeljenja." />
+    <meta name="twitter:image" content="/raspored/og.png" />
+    <title>Školski raspored</title>
     <script>
       // Postavite temu na osnovu localStorage-a odmah
       const savedTheme = localStorage.getItem('tema');
-      if (savedTheme === 'dark') {
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : (prefersDark ? 'dark' : 'light');
+      document.documentElement.dataset.theme = theme;
+      if (theme === 'dark') {
         document.documentElement.classList.add('dark');
       } else {
         document.documentElement.classList.remove('dark');
       }
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script type="module" crossorigin src="/raspored/assets/index-DergJ02U.js"></script>
-    <link rel="stylesheet" crossorigin href="/raspored/assets/index-DyTfh29F.css">
+    <script type="module" crossorigin src="/raspored/assets/index-Do8jnwNC.js"></script>
+    <link rel="stylesheet" crossorigin href="/raspored/assets/index-CJQz9vwu.css">
   </head>
   <body>
     <div id="root"></div>
