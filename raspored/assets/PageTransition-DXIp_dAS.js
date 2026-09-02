@@ -1,0 +1,1 @@
+import{a,j as s}from"./index-BAHDfOlf.js";function i({children:t}){const{settings:n}=a();return n.enableAnimations?s.jsx("div",{className:"w-full",children:t}):s.jsx(s.Fragment,{children:t})}export{i as P};
