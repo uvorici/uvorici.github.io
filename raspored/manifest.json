@@ -1,12 +1,12 @@
 {
-  "name": "Školski Raspored",
+  "name": "Školski raspored — JU MSŠ „Hazim Šabanović“ Visoko",
   "short_name": "Raspored",
-  "description": "Raspored nastave JU MSŠ 'Hazim Šabanović' Visoko",
+  "description": "Pregled sedmičnih rasporeda profesora i odjeljenja JU MSŠ „Hazim Šabanović“ Visoko.",
   "start_url": "/raspored/",
   "scope": "/raspored/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#0ea5e9",
+  "background_color": "#f1f3f5",
+  "theme_color": "#7a3e48",
   "icons": [
     {
       "src": "/raspored/mss3-2048x2048.svg",

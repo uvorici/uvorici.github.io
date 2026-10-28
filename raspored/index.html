@@ -3,18 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/raspored/mss3-2048x2048.svg" />
+    <link rel="apple-touch-icon" href="/raspored/mss3-2048x2048.svg" />
     <link rel="manifest" href="/raspored/manifest.json" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pregled sedmičnih rasporeda profesora i odjeljenja JU MSŠ Hazim Šabanović Visoko." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Pregled sedmičnih rasporeda profesora i odjeljenja JU MSŠ „Hazim Šabanović“ Visoko." />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Školski raspored" />
-    <meta property="og:description" content="Pregled sedmičnih rasporeda profesora i odjeljenja." />
+    <meta property="og:locale" content="bs_BA" />
+    <meta property="og:site_name" content="Školski raspored" />
+    <meta property="og:title" content="Školski raspored — JU MSŠ „Hazim Šabanović“ Visoko" />
+    <meta property="og:description" content="Pregled sedmičnih rasporeda profesora i odjeljenja JU MSŠ „Hazim Šabanović“ Visoko." />
     <meta property="og:image" content="/raspored/og.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Školski raspored" />
-    <meta name="twitter:description" content="Pregled sedmičnih rasporeda profesora i odjeljenja." />
+    <meta name="twitter:title" content="Školski raspored — JU MSŠ „Hazim Šabanović“ Visoko" />
+    <meta name="twitter:description" content="Pregled sedmičnih rasporeda profesora i odjeljenja JU MSŠ „Hazim Šabanović“ Visoko." />
     <meta name="twitter:image" content="/raspored/og.png" />
-    <title>Školski raspored</title>
+    <title>Školski raspored — JU MSŠ „Hazim Šabanović“ Visoko</title>
     <script>
       // Postavite temu na osnovu localStorage-a odmah
       const savedTheme = localStorage.getItem('tema');
@@ -26,9 +30,13 @@
       } else {
         document.documentElement.classList.remove('dark');
       }
+      const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+      if (themeColorMeta) {
+        themeColorMeta.setAttribute('content', theme === 'dark' ? '#22262b' : '#ffffff');
+      }
     </script>
-    <script type="module" crossorigin src="/raspored/assets/index-BAHDfOlf.js"></script>
-    <link rel="stylesheet" crossorigin href="/raspored/assets/index-D-ox2ixS.css">
+    <script type="module" crossorigin src="/raspored/assets/index-DpLcBPJg.js"></script>
+    <link rel="stylesheet" crossorigin href="/raspored/assets/index-CS_Tk5Dq.css">
   </head>
   <body>
     <div id="root"></div>
