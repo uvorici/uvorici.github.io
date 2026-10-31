@@ -5,13 +5,13 @@
   "start_url": "/raspored/",
   "scope": "/raspored/",
   "display": "standalone",
-  "background_color": "#f1f3f5",
-  "theme_color": "#7a3e48",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "/raspored/mss3-2048x2048.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "/raspored/mss-logo.png",
+      "sizes": "355x355",
+      "type": "image/png",
       "purpose": "any"
     }
   ]

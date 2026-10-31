@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="bs">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/raspored/mss-logo.png" />
+    <link rel="apple-touch-icon" href="/raspored/mss-logo.png" />
+    <link rel="manifest" href="/raspored/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Pregled sedmičnih rasporeda profesora i odjeljenja JU MSŠ „Hazim Šabanović“ Visoko." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="bs_BA" />
+    <meta property="og:site_name" content="Školski raspored" />
+    <meta property="og:title" content="Školski raspored — JU MSŠ „Hazim Šabanović“ Visoko" />
+    <meta property="og:description" content="Pregled sedmičnih rasporeda profesora i odjeljenja JU MSŠ „Hazim Šabanović“ Visoko." />
+    <meta property="og:image" content="/raspored/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Školski raspored — JU MSŠ „Hazim Šabanović“ Visoko" />
+    <meta name="twitter:description" content="Pregled sedmičnih rasporeda profesora i odjeljenja JU MSŠ „Hazim Šabanović“ Visoko." />
+    <meta name="twitter:image" content="/raspored/og.png" />
+    <title>Školski raspored — JU MSŠ „Hazim Šabanović“ Visoko</title>
+    <script>
+      // Postavite temu na osnovu localStorage-a odmah
+      const savedTheme = localStorage.getItem('tema');
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : (prefersDark ? 'dark' : 'light');
+      document.documentElement.dataset.theme = theme;
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+      const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+      if (themeColorMeta) {
+        themeColorMeta.setAttribute('content', theme === 'dark' ? '#161616' : '#ffffff');
+      }
+    </script>
+    <script type="module" crossorigin src="/raspored/assets/index-JB3d5yiE.js"></script>
+    <link rel="stylesheet" crossorigin href="/raspored/assets/index-D_WseWTB.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
